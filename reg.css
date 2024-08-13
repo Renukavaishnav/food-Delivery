@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(236, 109, 173);
+    height: 100vh;
+}
+
+form {
+    background-color: rgb(243, 237, 237);
+    width: 350px;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+div {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px; /* Added for consistency */
+}
+
+input:focus {
+    border-color: #ee80b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(236, 53, 123, 0.5);
+    border-width: 2px; /* Slightly thicker border on focus */
+}
+
+small {
+    display: none;
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+input.error + small {
+    display: block;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ca1779;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+button:hover {
+    background-color: #dd4282;
+}

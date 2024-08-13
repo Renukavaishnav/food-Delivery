@@ -58,6 +58,11 @@ main{
     padding: 4px 8px;
 }
 
+.bttn:hover{
+    background-color: rgb(150, 35, 54);;
+}
+
+
 footer{
     text-align: center;
     background-color: rgb(150, 35, 54);
@@ -65,5 +70,5 @@ footer{
     width: 100%;
     bottom: 0;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
 }
