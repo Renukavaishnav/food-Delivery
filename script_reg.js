@@ -20,8 +20,8 @@ document.getElementById('reg1').addEventListener('submit', function(event) {
         isValid = false;
     }
 
-    if (!validatePassword(password)) {
-        setError('password', "Password must be at least 8 characters long and include uppercase, lowercase, numbers, and special characters");
+    if (password.length < 8) {
+        setError('password', "Password must be at least 8 characters long");
         isValid = false;
     }
 
@@ -52,10 +52,4 @@ function clearErrors() {
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
-}
-
-function validatePassword(password) {
-    // Password must be at least 8 characters long, contain uppercase, lowercase, numbers, and special characters
-    const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    return re.test(password);
 }
