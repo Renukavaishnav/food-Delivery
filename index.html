@@ -1,55 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!--Header part -->
-<header>
-    <h2>Online Restaurant</h2>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h2>Online Restaurant</h2>
+        <nav>
+            <ul>
+                <li><a href="#slider">Home</a></li>
+                <li><a href="#ms1">Order</a></li>
+                <li><a href="#ms2">Menu</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <!-- Main part -->
-<main>
-    <section id="ms1"> 
-        <h1>Order Delicious Food Here!</h1>
-        <p>Get your dishes delivered at your DoorStep !</p>
-        <a href="#" class="bttn">Order Now </a>
+
+    <!-- Slider Section -->
+    <section class="slider" id="slider">
+        <div class="slideshow-container">
+            <div class="mySliders fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="pink dish.jpeg" alt="Dish" style="width:100%">
+                <div class="text">Caption one</div>
+            </div>
+    
+            <div class="mySliders fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="pink food.jpeg" alt="Food" style="width:100%">
+                <div class="text">Caption two</div>
+            </div>
+    
+            <div class="mySliders fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="pink restro.jpeg" alt="Restaurant" style="width:100%">
+                <div class="text">Caption three</div>
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <br>
+    
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
 
-    <section id="ms2">
-        <h1>Our Menu</h1>
-        <div class="item-menu">
-            <img src="pizza.jpeg" alt="Pizza">
-            <h4>Pizza</h4>
-            <p>This is Pizza with all the veggies avaliable in all sizes</p>
-            <span>Rs.300</span>
-        </div>
+    <!-- Main part -->
+    <main>
 
-        <div class="item-menu">
-            <img src="burgur.jpg" alt="Burgur">
-            <h4>Burgur/h4>
-            <p>This is Pizza with all the veggies avaliable in all sizes</p>
-            <span>Rs.100</span>
-        </div>
-    </section>
-</main>
+        <!-- Order Section -->
+        <section id="ms1">
+            <h1>Order Delicious Food Here!</h1>
+            <p>Get your dishes delivered at your DoorStep !</p>
+            <a href="#" class="bttn">Order Now </a>
+        </section>
 
-<footer>
-    @copyright 20234  Online Restaurant
-</footer>
+        <!-- Menu Section -->
+        <section id="ms2">
+            <h1>Our Menu</h1>
+            <div class="flex-container">
+    
+                <!-- Section Pizza -->
+                <div>
+                    <img src="pizza.jpeg" alt="Pizza">
+                    <h4>Margherita Pizza</h4>
+                    <p>Classic Margherita pizza with fresh tomatoes, mozzarella, basil, and a hint of olive oil.</p>
+                    <span>Rs.149</span>
+                </div>
+    
+                <div>
+                    <img src="pizza.jpeg" alt="Pizza">
+                    <h4>Mexican Pizza</h4>
+                    <p>Savor our Mexican pizza with zesty spices, fresh ingredients, and a crispy crust. A flavor fiesta!.</p>
+                    <span>Rs.179</span>
+                </div>
+    
+                <div>
+                    <img src="pizza.jpeg" alt="Pizza">
+                    <h4>Veggie Crunch Pizza</h4>
+                    <p>Delicious vegetarian pizza with a flavorful blend of fresh vegetables and melted cheese on a crispy crust.</p>
+                    <span>Rs.199</span>
+                </div>
+    
+                <div>
+                    <img src="pizza.jpeg" alt="Pizza">
+                    <h4>Cheesy Corn Pizza</h4>
+                    <p>Savor our Mexican pizza with zesty spices, fresh ingredients, and a crispy crust. A flavor fiesta!.</p>
+                    <span>Rs.219</span>
+                </div>
+    
+            </div>
+    
+                        <!-- Section burger -->
+            <div class="flex-container">
+                <div>
+                    <img src="burgur.jpg" alt="Pizza">
+                    <h4>Burger</h4>
+                    <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomatoes, and pickles in a soft, toasted bun.</p>
+                    <span>Rs.49</span>
+                </div>
+    
+                <div>
+                    <img src="moms.jpeg" alt="Pizza">
+                    <h4>Momos</h4>
+                    <p>Delicious, handcrafted momos served with a variety of flavorful dips.</p>
+                    <span>Rs.79</span>
+                </div>
+    
+                <div>
+                    <img src="sandwich.jpeg" alt="Pizza">
+                    <h4>Sandwich</h4>
+                    <p>Savory sandwich with fresh ingredients, perfect for a satisfying meal.</p>
+                    <span>Rs.99</span>
+                </div>
+    
+                <div>
+                    <img src="cake.jpeg" alt="Pizza">
+                    <h4>Cakes</h4>
+                    <p>Delicious, freshly baked cakes with rich flavors and unique designs.</p>
+                    <span>Rs.199</span>
+                </div>
+    
+            </div>
+        </section>
+
+
+        <!-- Form Section -->
+        <section class="form" id="login">
+            <form id="reg1">
+                <h1>Registration Form</h1>
+                <div>
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name" required>
+                    <small>Error Message</small>
+                </div>
+
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="text" name="email" id="email" required>
+                    <small>Error Message</small>
+                </div>
+
+                <div>
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password" required>
+                    <small>Error Message</small>
+                </div>
+
+                <button type="submit">Signup</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        @copyright 20234 Online Restaurant
+    </footer>
 </body>
+
+<script src="script_reg.js"></script>
+<script src="slider.js"></script>
+
 </html>
